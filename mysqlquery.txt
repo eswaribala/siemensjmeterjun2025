@@ -1,0 +1,2 @@
+use userdb;
+create table siemensuser(User_Id int primary key, Name varchar(45), DOB date);
