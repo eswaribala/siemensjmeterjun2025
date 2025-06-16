@@ -1,0 +1,7 @@
+1. Download jar file from https://jmeter-plugins.org/install/Install/
+2.  copy the jar file to jemeter lib/ext folder
+3. Go to https://jmeter-plugins.org/?search=jpgc-casutg to download different thread groups
+4. download jpgc-casutg-3.1.1.zip file
+5. Extract and put the jars in lib/ext folder
+6. Restart Jmeter
+
