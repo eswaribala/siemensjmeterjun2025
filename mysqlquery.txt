@@ -1,2 +1,4 @@
 use userdb;
 create table siemensuser(User_Id int primary key, Name varchar(45), DOB date);
+use userdb;
+insert into siemensuser(User_Id,Name,DOB) values(1,'Parameswari','1970-12-02');
