@@ -27,3 +27,10 @@ dynamicQueues/employeequeue
 dynamicQueues/employeequeue
 #in the connection factory text box
 ConnectionFactory
+
+#object message
+{
+  "event": "USER_CREATED",
+  "userId": "1234"
+}
+
