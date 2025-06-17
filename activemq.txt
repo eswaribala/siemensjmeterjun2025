@@ -11,3 +11,19 @@ localhost:8161
 #user name and password 
 admin
 admin
+
+# JMS Publisher Properties
+JNDI Initial Context Factory JNDI Initial Context Factory	org.apache.activemq.jndi.ActiveMQInitialContextFactory
+JMSType
+TextMessage
+QueueConnectionFactory
+ConnectionFactory
+queue.TESTQUEUE
+dynamicQueues/employeequeue
+JNDI Name Request Queue
+dynamicQueues/employeequeue
+
+#in the detaination text box
+dynamicQueues/employeequeue
+#in the connection factory text box
+ConnectionFactory
