@@ -5,3 +5,6 @@ https://activemq.apache.org/components/classic/download/classic-05-16-07
 cd <activemqbin folder path>
 #type the following command
 activemq.bat start
+#go to browser
+#type 
+localhost:8161
