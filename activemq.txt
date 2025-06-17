@@ -1,2 +1,7 @@
 #download zip from
 https://activemq.apache.org/components/classic/download/classic-05-16-07
+# extract and go to bin folder and copy the path
+#open commad prompt with run as administrator
+cd <activemqbin folder path>
+#type the following command
+activemq.bat start
