@@ -1,1 +1,19 @@
 https://run.mocky.io/v3/db69bc7f-40f2-4ad1-b243-e1f6004db3ca
+
+
+import groovy.xml.XmlSlurper
+def response=prev.getResponseDataAsString()
+def users=new XmlSlurper().parseText(repsonse)
+
+//read thread number
+//int position=ctx.getThreadNum()
+//def currentUser=users.user[position-1]
+int count=0
+users.user.each{user->
+ vars.put("username",user.username.text())
+ vars.put("password",user.password.text())
+ log.info(${username})
+ count++
+}
+
+vars.put("userCount",count.toString())
