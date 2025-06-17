@@ -8,3 +8,6 @@ activemq.bat start
 #go to browser
 #type 
 localhost:8161
+#user name and password 
+admin
+admin
