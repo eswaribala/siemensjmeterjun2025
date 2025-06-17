@@ -13,7 +13,8 @@ admin
 admin
 
 # JMS Publisher Properties
-JNDI Initial Context Factory JNDI Initial Context Factory	org.apache.activemq.jndi.ActiveMQInitialContextFactory
+JNDI Initial Context Factory
+org.apache.activemq.jndi.ActiveMQInitialContextFactory
 JMSType
 TextMessage
 QueueConnectionFactory
