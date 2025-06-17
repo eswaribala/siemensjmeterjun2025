@@ -1,0 +1,3 @@
+import java.util.Random;
+
+vars.put("photoId", new Random().nextInt(1,5000).toString())
