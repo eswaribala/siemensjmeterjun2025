@@ -6,3 +6,14 @@ vars.put("photoId", new Random().nextInt(1,5000).toString())
 #http sampler
 #path
 /photos/${photoId}
+===================================
+Read xml file
+import groovy.xml.XmlSlurper
+
+def xmlFile=new File("E:\\JMeter","users.xml")
+def users=new XmlSlurper().parse(xmlFile)
+//read thread number
+int position=ctx.getThreadNum()
+def currentUser=users.user[position-1]
+vars.put("username",currentUser.username.text())
+vars.put("password",currentUser.password.text())
