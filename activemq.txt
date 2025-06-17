@@ -23,10 +23,12 @@ dynamicQueues/employeequeue
 JNDI Name Request Queue
 dynamicQueues/employeequeue
 
-#in the detaination text box
+#in the destination text box
 dynamicQueues/employeequeue
 #in the connection factory text box
 ConnectionFactory
+# Initial Context Factory text box
+org.apache.activemq.jndi.ActiveMQInitialContextFactory
 
 #object message
 {
