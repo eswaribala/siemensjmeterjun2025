@@ -1,1 +1,3 @@
 jmeter -n -t  UserAPITest.jmx -l report.jtl
+#to html report
+jmeter -g  report.jtl -e -o "E:\siemensjemetertraining\day1\reports"
