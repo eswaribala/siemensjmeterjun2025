@@ -1,0 +1,37 @@
+#scalar Long
+#type Address{
+#
+#    addressId: Long
+#    doorNo: String
+#    streetName: String
+#    city: String
+#    country: String
+#    pinCode: Long
+#    userAccount: UserAccount
+#
+#}
+#
+#input  AddressInput{
+#    addressId: Long
+#    doorNo: String
+#    streetName: String
+#    city: String
+#    country: String
+#    pinCode: Long
+#    userAccountInput: UserAccountInput
+#}
+#
+#
+#
+#extend type UserAccountQuery {
+#    getAllAddresses:[Address]
+#    getAddressById(addressId: Long):Address
+#    getAddressByCity(city: String):[Address]
+#
+#}
+#
+#extend type UserAccountMutation {
+#    addAddress(userId: String,addressInput:AddressInput):Address
+#    updateAddress(addressId:Long, city:String): Address
+#    deleteAddress(addressId: Long): Boolean
+#}

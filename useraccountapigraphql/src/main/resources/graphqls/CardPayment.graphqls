@@ -1,0 +1,39 @@
+#
+#enum CardType{
+#    MASTER,VISA,RUPAY
+#}
+#
+#type CardPayment implements Payment{
+#    transactionId: Long
+#    buyerName: String
+#    amount: Long
+#    dot: Date
+#    cardNo: Long
+#    cardType: CardType
+#    cvvNo: Int
+#    expiryDate: Date
+#}
+#
+#input CardPaymentInput{
+#    transactionId: Long
+#    buyerName: String
+#    amount: Long
+#    dot: Date
+#    cardNo: Long
+#    cardType: CardType
+#    cvvNo: Int
+#    expiryDate: Date
+#}
+#
+#
+#
+#extend type UserAccountQuery {
+#    getAllCardPayments:[CardPayment]
+#    getCardPaymentById(transactionId: Long):CardPayment
+#}
+#
+#extend type UserAccountMutation {
+#    addCardPayment(cardPaymentInput:CardPaymentInput):CardPayment
+#
+#    deleteCardPayment(cardNo: Long): Boolean
+#}
