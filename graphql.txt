@@ -19,3 +19,13 @@ addUserAccount(userAccountInput:$userAccountInput){
     "dob": "1970-12-02"
   }
 }
+========================
+#GET operation
+query{
+  getAllUserAccounts{
+    fullName{
+      firstName
+    },
+    gender
+  }
+}
