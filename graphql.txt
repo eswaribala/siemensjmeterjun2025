@@ -1,0 +1,21 @@
+#mutation
+mutation($userAccountInput:UserAccountInput!){
+addUserAccount(userAccountInput:$userAccountInput){
+  userId
+  
+}
+}
+#query variables
+{
+  "userAccountInput": {
+    "userId": 0,
+    "fullName": {
+      "firstName": "Parameswari",
+      "lastName": "Bala"
+    },
+    "gender": "FEMALE",
+    "email": "Param@gmail.com",
+    "password": "Test@123",
+    "dob": "1970-12-02"
+  }
+}
