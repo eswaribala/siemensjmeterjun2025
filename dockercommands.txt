@@ -2,4 +2,8 @@
 docker network ls
 #create network
 docker network create qualcommnetwork  
+#create graphite container
+docker run -d --name graphite  -p 72:80 -p 2003-2004:2003-2004 -p 2023-2024:2023-2024 -p 8125:8125/udp -p 8126:8126 --network qualcommnetwork graphiteapp/graphite-statsd
+
+
   
