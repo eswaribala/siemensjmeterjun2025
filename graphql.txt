@@ -33,3 +33,5 @@ query{
 #jmeter
 query { getAllUserAccounts { userId } }
 
+query { getAllUserAccounts { userId,gender,email,fullName{firstName,lastName} } }
+
