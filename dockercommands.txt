@@ -1,0 +1,5 @@
+#check docker network
+docker network ls
+#create network
+docker network create qualcommnetwork  
+  
