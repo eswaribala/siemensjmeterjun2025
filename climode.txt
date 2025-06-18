@@ -1,3 +1,6 @@
 jmeter -n -t  UserAPITest.jmx -l report.jtl
 #to html report
 jmeter -g  report.jtl -e -o "E:\siemensjemetertraining\day1\reports"
+
+#copy test case from local machine to production server master
+docker cp "E:\siemensjemetertraining\day1\UserAPITest.jmx" 37b217755d51:\tests
