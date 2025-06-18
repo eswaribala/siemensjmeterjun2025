@@ -1,0 +1,1 @@
+jmeter -n -t  UserAPITest.jmx -l report.jtl
