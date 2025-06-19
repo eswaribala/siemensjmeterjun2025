@@ -3,3 +3,7 @@
 # go to folder where you have jenkins.war
 cd c:\downloads
 java -jar jenkins.war --httpPort=7076
+
+
+#to run test case
+jmeter -n -t UserAPITest.jmx -l report_%BUILD_NUMBER%.jtl & jmeter -g report_%BUILD_NUMBER%.jtl -e -o ./reports_%BUILD_NUMBER%
