@@ -1,3 +1,5 @@
 #to run jenkins
 #go to command prompt with run as administrator
+# go to folder where you have jenkins.war
+cd c:\downloads
 java -jar jenkins.war --httpPort=7076
